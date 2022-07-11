@@ -53,7 +53,7 @@ function fadeOut() {
 }
 
 async function conselho() {
-	numeroConselho = Math.floor(Math.random()*100);
+	numeroConselho = Math.floor(Math.random()*224);
 	data = await fetch(`https://api.adviceslip.com/advice/${numeroConselho}`);
 	advice = await data.json();
 

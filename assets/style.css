@@ -6,7 +6,7 @@
 	border: 1px solid white;
 	color: white;
 	background: black;
-	transform: translate(-20px, -20px);
+	transform: translate(0px, -20px);
 	padding: 10px 0 10px 0;
 }
 
@@ -329,50 +329,42 @@ a:nth-child(2):hover {
 }
 
 .barrinhas {
-	width:  100%;
-	height: 3px;
-	border-radius: 10px;
-	background: rgb(10, 10, 10);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
 	transition:.5s ease-in-out;
 	z-index: 99;
+	font-size: 88px;
 	position: absolute;
+	font-weight: bold;
+	animation: giroAdvice 4s infinite linear alternate;
+	transition: .3s;
+
 }
 
-.barrinhas:nth-child(1) {
-	top: 26px;
-	transform: rotate(0);
+@keyframes giroAdvice {
+	0% {transform: rotate(45deg) }
+	50% {transform: rotate(0deg) }
+	100% {transform: rotate(-45deg)}
+	
 }
 
-.barrinhas:nth-child(2) {
-	top: 46px;
-	transform: translateX(0);
-}
-
-.barrinhas:nth-child(3) {
-	top: 66px;
-	transform: rotate(0);
+@keyframes giroChecked {
+	0% {transform: rotate(0deg) scale(.5) }
+	100% {transform: rotate(360deg) scale(.5)}
+	
 }
 
 
 #toggle:checked + .container-barrinhas .barrinhas {
 	background-color: white;
+	animation: giroChecked 4s infinite linear;
+
 }
 
-#toggle:checked + .container-barrinhas .barrinhas:nth-child(1) {
-	transform: rotate(45deg);
-	top: 46px;
-}
-
-#toggle:checked + .container-barrinhas .barrinhas:nth-child(2) {
-	transform: translateX(-100px);
-	width: 30px;
-	opacity: 0;
-}
-
-#toggle:checked + .container-barrinhas .barrinhas:nth-child(3) {
-	transform: rotate(-45deg);
-	top: 46px;
-}
 
 
 .buble {
@@ -411,6 +403,43 @@ a:nth-child(2):hover {
 	transition: .3s ease-in-out 0s;
 	position: absolute;
 
+}
+
+.menu-buble div{
+	color: white;
+	margin-bottom: 50px;
+}
+
+#autor{
+	font-size: 24px;
+	font-style: italic;
+	
+}
+
+#conselhoAdvice{
+	font-size: 2.5em;
+	font-weight: bold;
+	width: 80vw;
+	text-align: center;
+	
+}
+
+#fonteConselho{
+	font-size: 1.3em;
+}
+
+#fonteConselho a:link{
+	color: white;
+	text-decoration: none;
+}
+
+#fonteConselho a:visited{
+	color: white;
+}
+
+#fonteConselho a:hover{
+	color: yellow;
+	text-decoration: none;
 }
 
 .menu-buble ul {
@@ -538,6 +567,7 @@ font-size: 20px;
 	
 }
 
+
 .container-text p:nth-child(1) {
 	font-weight: bold;
 	font-size: 24px;
@@ -629,7 +659,7 @@ font-size: 20px;
 		border: 1px solid white;
 		color: white;
 		background: black;
-		transform: translate(-20px, -20px);
+		transform: translate(0px, -20px);
 		padding: 10px 0 10px 0;
 	}
 

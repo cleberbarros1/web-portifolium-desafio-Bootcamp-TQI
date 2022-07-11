@@ -52,5 +52,14 @@ function fadeOut() {
 
 }
 
+async function conselho() {
+	numeroConselho = Math.floor(Math.random()*100);
+	data = await fetch(`https://api.adviceslip.com/advice/${numeroConselho}`);
+	advice = await data.json();
+
+	document.getElementById("conselhoAdvice").innerHTML = "\"-   " + advice.slip.advice;
+	document.getElementById("autor").innerHTML = "Conselho <b>N° " + numeroConselho + "</b>";
+}
+
 
 

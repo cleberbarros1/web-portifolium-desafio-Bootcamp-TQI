@@ -41,21 +41,18 @@
         
             <div class="container-do-hamburguer">
 
-                <input type="checkbox" id="toggle">
+                <input type="checkbox" id="toggle" onchange="conselho()">
 
                 <label for="toggle" class="container-barrinhas">
-                    <div class="barrinhas"></div>
-                    <div class="barrinhas"></div>
-                    <div class="barrinhas"></div>
+                    <div class="barrinhas"><span>?</span></div>
                 </label>
 
                 <div class="buble"></div>
 
                     <nav class="menu-buble">
-                        <ul>
-                            <li><a href="index.html">Homme</a></li>
-                            <li><a href="#">Sobre</a></li>
-                            <li><a href="https://github.com/cleberbarros1" target="blank_" >Projetos</a></li>
+                        <div id="autor"> - Conselhos Aleatórios</div>
+                        <div id="conselhoAdvice"> - Desconhecido</div>
+                        <div id="fonteConselho"> Fonte - <a target="_blank" href="https://api.adviceslip.com/#endpoint-random">https://api.adviceslip.com/#endpoint-random</a></div>
                         </ul>
                     </nav>
 
@@ -74,7 +71,9 @@
         <div class="container-item">
             <div class="container-text">
             <p>TQI Fullstack Developer - 2022<span class="marcador">_</span></p>
-            <p>O Bootcamp TQI Fullstack Developer é um programa gratuito para formação em desenvolvimento fullstack e recrutamento de desenvolvedores juniores pela TQI. O programa apresenta cursos, desafios práticos e mentorias em tecnologias essenciais para front-end e back-end, além de banco de dados e introdução à Quality Assurance (QA) para testes e qualidade. <span class="marcador">_</span></p>
+            <p>O Bootcamp TQI Fullstack Developer é um programa gratuito para formação em desenvolvimento fullstack e recrutamento de desenvolvedores juniores pela TQI. O programa apresenta cursos, desafios práticos e mentorias em tecnologias essenciais para front-end e back-end, além de banco de dados e introdução à Quality Assurance (QA) para testes e qualidade geral. <span class="marcador">_</span></p>
+
+
             </div>
             <div class="container-card"><img class="card" src="img/TQI_shield.png"></div>
         </div>
@@ -152,9 +151,6 @@
         </div>
         
     </main>
-
-
-
 
 
     

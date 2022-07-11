@@ -2,7 +2,7 @@
 	font-size: 48px;
 	font-weight: bold;
 	display: flex;
-	width: 90%;
+	width: 80%;
 	border: 1px solid white;
 	color: white;
 	background: black;
@@ -451,14 +451,11 @@ a:nth-child(2):hover {
 
 
 .container {
-	width: 100%;
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
-	margin: 0px;
-	padding: 0;
-	
+	justify-content: space-between;
 }
 
 .container-item {
@@ -549,6 +546,10 @@ font-size: 20px;
 
 
 @media (max-width: 800px) {
+
+	body {
+		overflow-x: hidden;
+	}
 	.container-item {
 		flex-direction: column;
 	}
@@ -558,7 +559,7 @@ font-size: 20px;
 	}
 
 	.animacaoCode {
-		font-size: 30px;
+		font-size: 20px;
 		font-weight: bold;
 	}
 	
@@ -580,7 +581,7 @@ font-size: 20px;
 	
 	.container-text {
 	align-items: center;
-	max-width: 90%;
+	max-width: 100%;
 	text-align: center;
 	
 	}
@@ -591,19 +592,29 @@ font-size: 20px;
 	}
 
 	.container-item:hover {
-		border: 1px solid rgb(8, 8, 8);
 		transform: translate(0px, -20px);
-		box-shadow: 20px 20px 20px black;
-		padding: 20px;
+		box-shadow: 0px 20px 20px black;
+		padding-top: 20px;
 		color: white;
 		background: black;
 		
 	}
 
-
 	.card {
 		max-width: 300px;
 		
+	}
+
+	#titulo_main {
+		font-size: 28px;
+		font-weight: bold;
+		display: flex;
+		width: 100vw;
+		border: 1px solid white;
+		color: white;
+		background: black;
+		transform: translate(-20px, -20px);
+		padding: 10px 0 10px 0;
 	}
 
 }

@@ -10,8 +10,8 @@ https://cleberbarros1.github.io/web-portifolium-desafio-Bootcamp-TQI/
 
 Imagens
 
-![image-20220727150142193](C:\Users\Cleber\AppData\Roaming\Typora\typora-user-images\image-20220727150142193.png)
+![image-20220727150142193](img1)
 
-![image-20220727150251790](C:\Users\Cleber\AppData\Roaming\Typora\typora-user-images\image-20220727150251790.png)
+![image-20220727150251790](img2)
 
-![image-20220727150333956](C:\Users\Cleber\AppData\Roaming\Typora\typora-user-images\image-20220727150333956.png)
+![image-20220727150333956](img3)

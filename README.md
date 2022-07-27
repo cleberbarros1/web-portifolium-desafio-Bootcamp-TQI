@@ -7,3 +7,11 @@ A aplicação foi feita com base no desafio feito durante o Bootcamp Fullstack D
 Link do GitHub Pages para quem quiser conferir na integra como a aplicação ficou:
 
 https://cleberbarros1.github.io/web-portifolium-desafio-Bootcamp-TQI/
+
+Imagens
+
+![image-20220727150142193](C:\Users\Cleber\AppData\Roaming\Typora\typora-user-images\image-20220727150142193.png)
+
+![image-20220727150251790](C:\Users\Cleber\AppData\Roaming\Typora\typora-user-images\image-20220727150251790.png)
+
+![image-20220727150333956](C:\Users\Cleber\AppData\Roaming\Typora\typora-user-images\image-20220727150333956.png)

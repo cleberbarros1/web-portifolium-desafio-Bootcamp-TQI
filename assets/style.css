@@ -71,20 +71,6 @@ body {
 	opacity: 1;
 	width: 100%;
 	height: 100vh;
-	
-
-}
-
-#gear_id {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	animation: giro2 10s infinite linear;
-	opacity: 1;
-	position: absolute;
-	transform: scale(1);
-	top: 30px;
-	width: 250px;
 
 }
 
@@ -97,7 +83,6 @@ body {
 	position: absolute;
 	transform-origin: center;
 	animation: flutuando0 60s infinite alternate;
-	visibility: hidden;
 }
 
 .floatIcons img{
@@ -234,9 +219,37 @@ body {
 .cab_text {
 	display: flex;
 	align-items: center;
+	text-align: left;
+	justify-content: space-around;
+}
+
+
+#gear_id {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: giro2 10s infinite linear;
+	opacity: 1;
+	transform: scale(1);
+	width: 250px;
+	margin-right: 50px;
+}
+
+.main-text {
+	display: flex;
+	align-items: flex-start;
 	flex-direction: column;
 	text-align: center;
+	width: 700px;
+	border: none;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	z-index: 2;
+	padding: 20px;
+	
 }
+
 
 .nomeAutor {
 	font-size: 60px;
@@ -263,32 +276,35 @@ body {
 
 .social-media {
 	margin-top: 20px;
-	justify-content: center;
+	justify-content: flex-end;
 	display: flex;
+	z-index: 2;
+
 }
 
 .social-media a{
 	border: 2px solid rgb(5, 5, 5);
 	text-decoration: none;
 	color: rgb(0, 0, 0);
-	font-size: 24px;
+	font-size: 22px;
 	padding: 1rem 4rem;
 	min-width: 4rem;
 	transition: .3s ease-in-out;
 	z-index: 1;
+	border-radius: 10px;
+	margin-right: 10px;
+	background: black;
+	color: white;
+	border: none;
 	
 }
+
 
 .social-media a:hover {
 	background: #fffefe;
 	color: rgb(8, 8, 8);
-
-}
-
-
-a:nth-child(2):hover {
-	background: white;
-	color: rgb(0, 0, 0);
+	opacity: 1;
+	transform: translate(-5px, -5px);
 
 }
 
@@ -382,8 +398,9 @@ a:nth-child(2):hover {
 }
 
 #toggle:checked ~ .buble {
-	background: #0C89E8;
+	background: green;
 	transform: scale(100);
+	filter: saturate(.5);
 	opacity: 1;
 	z-index: 3;
 }
@@ -581,21 +598,41 @@ font-size: 20px;
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
-	body {
-		overflow-x: hidden;
+	.main-text {
+		width: 250px;
 	}
+
+	.cab_text {
+		flex-direction: column;
+	}
+
+	#gear_id {
+		margin: 10px 0;
+		width: 150px;
+
+	}
+
 	.container-item {
 		flex-direction: column;
 	}
 
+	#fonteConselho {
+		font-size: 15px;
+	}
+
+	#conselhoAdvice{
+		font-size: 1.5em;
+		
+	}
+
 	.nomeAutor {
-		font-size: 40px;
+		font-size: 45px;
 	}
 
 	.animacaoCode {
-		font-size: 20px;
+		font-size: 24px;
 		font-weight: bold;
 	}
 	
@@ -633,13 +670,7 @@ font-size: 20px;
 	
 	.container-text {
 	align-items: center;
-	max-width: 100%;
 	text-align: center;
-	
-	}
-
-	#gear_id {
-		width: 150px;
 	
 	}
 
@@ -661,7 +692,6 @@ font-size: 20px;
 		font-size: 28px;
 		font-weight: bold;
 		display: flex;
-		width: 100vw;
 		border: 1px solid white;
 		color: white;
 		background: black;
